@@ -23,7 +23,7 @@ public class UsersController(DataContext context) : ControllerBase
     {
         var user = await context.Users.FindAsync(id);
 
-        if (user == null) return NotFound();
+        if (user == null) return NotFound();//comment
 
         return user;
     }
